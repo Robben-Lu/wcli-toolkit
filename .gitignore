@@ -132,9 +132,12 @@ dmypy.json
 # Cython debug symbols
 cython_debug/
 
+# Cursor
+.cursor/*
+!.cursor/settings.json
+
 # VS Code
-.vscode/*
-!.vscode/settings.json
+.vscode/
 
 # macOS
 .DS_Store
