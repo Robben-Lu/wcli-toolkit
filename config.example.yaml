@@ -1,0 +1,15 @@
+# ®áíÁMn
+# –!ÐL 'wcli config init'  'wcli config init --interactive' öê¨ú ~/.wcli/config.yaml
+# èOáo‚Secret	X¨(ûßÆ¥þ-ÝX(d‡ö
+wcli:
+  corpid: "YOUR_CORP_ID_HERE" # `„ID
+  # ”(Mn
+  apps:
+    contact:
+      agent_id: 1000001  # ¯U”(ID
+    message:
+      agent_id: 1000002  # ˆo”(ID
+  # Ø¤¾n
+  defaults:
+    output_format: "json"  # Ø¤“ú<: json, table, text
+    log_level: "INFO"  # å×§+: DEBUG, INFO, WARNING, ERROR

@@ -1,0 +1,48 @@
+[tool.poetry]
+name = "wcli"
+version = "0.1.0"
+description = "A CLI toolkit for WeCom (Enterprise WeChat) to be used by AI agents and humans."
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "wcli"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+typer = {extras = ["all"], version = "^0.12.3"}
+wechatpy = "^2.0.0"
+pyyaml = "^6.0.1"
+rich = "^13.7.1"  # Typer„}-c(ŽŽ“úŒÛ¦a
+keyring = "^24.3.0"  # ‰hX¨Oáo
+tenacity = "^8.2.3"  # ÍÕ:6
+questionary = "^2.0.1"  # ¤’Mnü
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2.2"
+black = "^24.4.2"
+ruff = "^0.4.8"
+pre-commit = "^3.7.1"
+
+[tool.poetry.scripts]
+# ÙA¸`‰Åô¥(}äL( 'wcli' }ä
+wcli = "wcli.main:app"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 88
+target-version = ["py39"]
+
+[tool.ruff]
+line-length = 88
+target-version = "py39"
+select = [
+    "E",  # pycodestyle errors
+    "W",  # pycodestyle warnings
+    "F",  # pyflakes
+    "I",  # isort
+    "B",  # flake8-bugbear
+    "C4", # flake8-comprehensions
+    "UP", # pyupgrade
+]
